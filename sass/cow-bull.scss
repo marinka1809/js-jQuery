@@ -1,0 +1,71 @@
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.welcome {
+  h1 {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 2em;
+    padding: 0 15px;
+
+    strong {
+      display: block;
+      margin-bottom: 1em;
+
+    }
+  }
+}
+
+.game {
+ margin: 20px 0;
+  .first-p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #2b98ee;
+    font-weight: 700;
+  }
+  form {
+    margin-bottom: 20px;
+    .number-input {
+      display: inline-block;
+      margin-right: 20px;
+      width: 8em;
+    }
+  }
+
+  .div-winner {
+    img {
+      max-width: 100%;
+      width: auto;
+    }
+
+    p {
+      font-size: 1.3em;
+      color: green;
+    }
+  }
+
+  .div-result {
+    p {
+      margin-bottom: 0.5em;
+      font-size: 1.2em;
+      color: #2b98ee;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .game {
+    form {
+      .number-input {
+        width: 15em;
+      }
+    }
+  }
+}

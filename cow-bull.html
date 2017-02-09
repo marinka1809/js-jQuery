@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="stylesheets/libs.min.css" type="text/css"/>
+        <link href="stylesheets/cow-bull.css" rel="stylesheet" type="text/css" />
+
+        <title>Js</title>
+    </head>
+    <body>
+        <div class="container">
+            <section class="row welcome">
+                <h1>Игра Быки и коровы</h1>
+                <div class="col-sm-6">
+                    <img src="img/13912892.jpg" alt="Бык и корова">
+                </div>
+                <p><strong>Правила игры</strong>
+                    Компьютер задумывает четырехзначное число. Цифры в числе не повторяются, 0 может стоять на первом месте.
+                    Игрок делает ходы, чтобы узнать это число. В ответ на каждый ход компьютер показывает число отгаданных цифр,
+                    стоящих на своих местах (число быков) и число отгаданных цифр, стоящих не на своих местах (число коров).
+                </p>
+                <p><strong>Пример</strong>
+                    Компьютер задумал 0834. Игрок походил 8134. Компьютер ответил: 2 быка (цифры 3 и 4) и 1 корова (цифра 8).
+                </p>
+
+                <p><strong>Новое число уже задумано компьютером. Играем!</strong></p>
+            </section>
+            <div class="row game" id="game">
+                <div class="col-sm-6" id="firstGame">
+                    <p class="first-p">Угадайте число !!!</p>
+                    <form onsubmit="return getTryNum();">
+                        <input class="form-control number-input" id="number-input" >
+                        <button type="submit" class="btn btn-info" id="move">Сделать ход</button>
+                    </form>
+                    <button class="btn btn-success" id="newGame">Новая игра</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/cow-bull.js"></script>
+    </body>
+</html>
