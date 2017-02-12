@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="stylesheets/libs.css" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/jQuery-task.css" rel="stylesheet" type="text/css" />
+
+        <title>The task of jQuery (form)</title>
+    </head>
+        <body>
+
+        <h1> Форма jQuery </h1>
+        <div class="container">
+            <form action="index.html" method="get" id="jQuery-form" class="jQuery-form">
+                <ul>
+                    <li>
+                        <label for="event-input">Мое значение выводится в консоль при любом изменении</label>
+                        <input type="text" name="event-input" id="event-input" class="event-input">
+                    </li>
+                    <li>
+                        <label for="event-keypress">В консоле видно какие кнопки нажимаются</label>
+                        <input type="text" name="event-keypress" id="event-keypress" class="event-keypress">
+                    </li>
+                    <li>Выведим их значения в консоль при изминении:
+                        <label>
+                            <input type="radio" name="number" value="first">первый
+                        </label>
+                        <label>
+                            <input type="radio" name="number" value="second" checked>второй
+                        </label>
+                        <label>
+                            <input type="radio" name="number" value="third">или третий
+                        </label>
+                    </li>
+                    <li>
+                        <label for="select-change">Выведим значения в консоль при изминении: </label>
+                        <select name="select-site" id="select-change">
+                            <option value="0">Site frequency:</option>
+                            <option>htmlbook</option>
+                            <option>htmlacademy.ru</option>
+                            <option>jquery.com</option>
+                            <option>ruseller.com</option>
+                        </select>
+                    </li>
+                    <li>
+                    <label for="recurring-field">Повторяющееся поле</label>
+                    <input type="text" name="recurring-field" id="recurring-field">
+                    </li>
+                    <li>
+                        <label for="field-duplicate">Поле дубликат</label>
+                        <input type="text" name="field-duplicate" id="field-duplicate">
+                    </li>
+                    <li>
+                        Что вы обычно делаете на выходных:
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="hobby[]" value="sleep">Сплю
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="hobby[]" value="friends">Гуляю с друзьями
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="hobby[]" value="fishing">Хожу на рыбалку
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="hobby[]" value="playing">Играю в игры
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <select multiple size="3" name="position[]">
+                            <option selected>Первая позиция</option>
+                            <option selected>Вторая позиция</option>
+                            <option selected>Третья позиция</option>
+                        </select>
+                    </li>
+                </ul>
+                <input type="submit" name="button-send" value="Отправить">
+            </form>
+        </div>
+        <script src="js/libs.min.js"></script>
+        <script src="js/jQuery-task.js"></script>
+    </body>
+
+</html>
